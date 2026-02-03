@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: spring-java-format
+        name: Spring Java Format
+        entry: mvn spring-javaformat:validate spring-javaformat:apply spring-javaformat:validate
+        language: system
+        types: [java]
+        pass_filenames: false
