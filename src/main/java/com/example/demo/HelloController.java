@@ -6,14 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class HelloController {
 
-  @GetMapping("/hello")
-  String hello() {
+	@GetMapping("/hello")
+	String hello() {
 
-
-
-    return "Hello Spring Java" +
-        "" +
-        " Format!";
-  }
+		return "Hello Spring Java Format!";
+	}
 
 }
